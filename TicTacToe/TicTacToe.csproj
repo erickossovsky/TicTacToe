@@ -95,16 +95,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Grid.png" />
+    <Resource Include="Images\Grid.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tic-tac-toe_1181538.png" />
+    <Resource Include="Images\tic-tac-toe_1181538.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tic-tac-toe_o.png" />
+    <Resource Include="Images\tic-tac-toe_o.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tic-tac-toe_x.png" />
+    <Resource Include="Images\tic-tac-toe_x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

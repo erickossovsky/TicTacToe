@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
-            <Image Source="Grid.png" Stretch="Fill" />
+            <Image Source="Images/Grid.png" Stretch="Fill" />
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
