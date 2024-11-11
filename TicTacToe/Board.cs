@@ -8,6 +8,13 @@ namespace TicTacToe
 {
     internal class Board
     {
+        private int[,] board = new int[3, 3];
 
+
+        public int Select(int x, int o)
+        {
+            return 3;
+
+        }
     }
 }
