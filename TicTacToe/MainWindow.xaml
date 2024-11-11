@@ -24,6 +24,14 @@
         </Grid.RowDefinitions>
 
         <Image Source="Images/tic-tac-toe_x.png" Grid.Row="0" Grid.Column="0" />
+        <Image Source="Images/tic-tac-toe_x.png" Grid.Row="1" Grid.Column="1" />
+        <Image Source="Images/tic-tac-toe_x.png" Grid.Row="2" Grid.Column="2" />
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/Grid.png"/>
+        </Grid.Background>
+
+
 
     </Grid>
 </Window>
