@@ -7,15 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="500">
     <Grid>
-        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
-        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
-        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+           
+        </Grid.ColumnDefinitions>
+      
 
 
-        <Grid.RowDefinitions></Grid.RowDefinitions>
-        <Grid.RowDefinitions></Grid.RowDefinitions>
-        <Grid.RowDefinitions></Grid.RowDefinitions>
-        <Grid.RowDefinitions></Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+       
       
 
     </Grid>
