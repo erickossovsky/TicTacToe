@@ -22,8 +22,8 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-       
-      
+
+        <Image Source="Images/tic-tac-toe_x.png" Grid.Row="0" Grid.Column="0" />
 
     </Grid>
 </Window>
