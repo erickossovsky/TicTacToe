@@ -37,7 +37,7 @@
             <ImageBrush ImageSource="Images/Grid.png"/>
         </Grid.Background>
 
-        <StackPanel></StackPanel>
+   
 
 
 
