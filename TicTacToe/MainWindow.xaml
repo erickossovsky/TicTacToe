@@ -23,15 +23,15 @@
           
         </Grid.RowDefinitions>
 
-        <Image Source="Images/blank_image.png" Grid.Row="0" Grid.Column="0" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="0" Grid.Column="1" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="0" Grid.Column="2" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="1" Grid.Column="0" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="1" Grid.Column="1" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="1" Grid.Column="2" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="2" Grid.Column="0" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="2" Grid.Column="1" Margin="20"/>
-        <Image Source="Images/blank_image.png" Grid.Row="2" Grid.Column="2" Margin="20"/>
+        <Image x:Name="Row0Col0" Source="Images/blank_image.png" Grid.Row="0" Grid.Column="0" Margin="20"/>
+        <Image x:Name="Row0Col1" Source="Images/blank_image.png" Grid.Row="0" Grid.Column="1" Margin="20"/>
+        <Image x:Name="Row0Col2" Source="Images/blank_image.png" Grid.Row="0" Grid.Column="2" Margin="20"/>
+        <Image x:Name="Row1Col0" Source="Images/blank_image.png" Grid.Row="1" Grid.Column="0" Margin="20"/>
+        <Image x:Name="Row1Col1" Source="Images/blank_image.png" Grid.Row="1" Grid.Column="1" Margin="20"/>
+        <Image x:Name="Row1Col2" Source="Images/blank_image.png" Grid.Row="1" Grid.Column="2" Margin="20"/>
+        <Image x:Name="Row2Col0" Source="Images/blank_image.png" Grid.Row="2" Grid.Column="0" Margin="20"/>
+        <Image x:Name="Row2Col1" Source="Images/blank_image.png" Grid.Row="2" Grid.Column="1" Margin="20"/>
+        <Image x:Name="Row2Col2" Source="Images/blank_image.png" Grid.Row="2" Grid.Column="2" Margin="20"/>
 
         <Grid.Background>
             <ImageBrush ImageSource="Images/Grid.png"/>
