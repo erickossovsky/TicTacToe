@@ -14,14 +14,29 @@ using System.Windows.Shapes;
 
 namespace TicTacToe
 {
-    /// <summary>
-    /// Interaction logic for SymbolsWindow.xaml
-    /// </summary>
+   
     public partial class SymbolsWindow : Window
     {
+        public Board.Player Symbol { get; set; }
         public SymbolsWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender;
+
+            if (button == XButton)
+            {
+                Symbol = Board.Player.X;
+            }
+            else
+            {
+                Symbol = Board.Player.O;
+            }
+
+            DialogResult = true;
         }
     }
 }
