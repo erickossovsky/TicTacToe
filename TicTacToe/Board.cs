@@ -28,16 +28,26 @@ namespace TicTacToe
             board = new Player[3, 3];
         }
 
+
+        public void Reset()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    board[i, j] = Player.None;
+                }
+            }
+        }
+
         public bool Select(int row, int col, Player player)
         {
-            if (row < 0 || row >= 3 || col < 0 || col >= 3 || board[row, col] != Player.None)
+            if (board[row, col] == Player.None)
             {
-                Console.WriteLine("Cannot place your marker there choose another spot");
-                return false;
+                board[row, col] = player;
+                return true;
             }
-
-            board[row, col] = player;
-            return true;
+            return false;
         }
 
         public Player CheckWin()

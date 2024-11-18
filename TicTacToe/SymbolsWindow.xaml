@@ -11,9 +11,9 @@
             <TextBlock Text="Choose Your Symbol For The Game" FontSize="25" ></TextBlock>
             <TextBlock Text="Tic Tac Toe Game" HorizontalAlignment="Center" FontSize="15" Margin="0,0,0,20"></TextBlock>
 
-            <Button  x:Name="XButton" Click="SymbolButton_Click">
+            <Button  x:Name="XButton" Click="Button_Click">
             <Image Source="Images/tic-tac-toe_x.png" Width="40" /></Button>
-            <Button  x:Name="OButton" Click="SymbolButton_Click">  
+            <Button  x:Name="OButton" Click="Button_Click">  
             <Image Source="Images/tic-tac-toe_o.png" Width="40" /></Button>
             
            
