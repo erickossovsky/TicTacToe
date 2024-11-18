@@ -42,7 +42,7 @@ namespace TicTacToe
             }
             else
             {
-                Close();
+                Close(); 
             }
 
         }
