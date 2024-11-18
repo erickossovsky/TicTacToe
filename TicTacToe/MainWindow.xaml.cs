@@ -110,7 +110,7 @@ namespace TicTacToe
         {
             TurnLabel.Content = $"Player {currentPlayer}'s turn";
             GamesPlayedLabel.Content = $"Games Played: {gamesTotal}";
-            winRatio = (x / gamesTotal) * 100;
+            int winRatio = (x / gamesTotal) * 100;
             WinRatioLabel.Content = $"Win Ratio: {winRatio}%";
         }
     }
