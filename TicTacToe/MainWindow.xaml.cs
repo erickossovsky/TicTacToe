@@ -103,15 +103,9 @@ namespace TicTacToe
                 }
 
 
-                UpdateNotification();
+               
             }
         }
-        private void UpdateNotification()
-        {
-            TurnLabel.Content = $"Player {currentPlayer}'s turn";
-            GamesPlayedLabel.Content = $"Games Played: {gamesTotal}";
-            int winRatio = (x / gamesTotal) * 100;
-            WinRatioLabel.Content = $"Win Ratio: {winRatio}%";
-        }
+       
     }
 }
