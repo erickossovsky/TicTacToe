@@ -32,6 +32,7 @@ namespace TicTacToe
         {
             if (row < 0 || row >= 3 || col < 0 || col >= 3 || board[row, col] != Player.None)
             {
+                Console.WriteLine("Cannot place your marker there choose another spot");
                 return false;
             }
 
