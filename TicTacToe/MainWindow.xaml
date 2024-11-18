@@ -11,6 +11,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            
            
         </Grid.ColumnDefinitions>
       
@@ -20,24 +21,33 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-          
+            <RowDefinition></RowDefinition>
+
         </Grid.RowDefinitions>
 
-        <Image x:Name="Row0Col0" Source="Images/blank_image.png" Grid.Row="0" Grid.Column="0" Margin="20"/>
-        <Image x:Name="Row0Col1" Source="Images/blank_image.png" Grid.Row="0" Grid.Column="1" Margin="20"/>
-        <Image x:Name="Row0Col2" Source="Images/blank_image.png" Grid.Row="0" Grid.Column="2" Margin="20"/>
-        <Image x:Name="Row1Col0" Source="Images/blank_image.png" Grid.Row="1" Grid.Column="0" Margin="20"/>
-        <Image x:Name="Row1Col1" Source="Images/blank_image.png" Grid.Row="1" Grid.Column="1" Margin="20"/>
-        <Image x:Name="Row1Col2" Source="Images/blank_image.png" Grid.Row="1" Grid.Column="2" Margin="20"/>
-        <Image x:Name="Row2Col0" Source="Images/blank_image.png" Grid.Row="2" Grid.Column="0" Margin="20"/>
-        <Image x:Name="Row2Col1" Source="Images/blank_image.png" Grid.Row="2" Grid.Column="1" Margin="20"/>
-        <Image x:Name="Row2Col2" Source="Images/blank_image.png" Grid.Row="2" Grid.Column="2" Margin="20"/>
+        <Button Grid.Row="0" Grid.Column="0"> <Image x:Name="Row0Col0" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="0" Grid.Column="1"> <Image x:Name="Row0Col1" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="0" Grid.Column="2"> <Image x:Name="Row0Col2" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="1" Grid.Column="0"> <Image x:Name="Row1Col0" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="1" Grid.Column="1"> <Image x:Name="Row1Col1" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="1" Grid.Column="2"> <Image x:Name="Row1Col2" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="2" Grid.Column="0"> <Image x:Name="Row2Col0" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="2" Grid.Column="1"> <Image x:Name="Row2Col1" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        <Button Grid.Row="2" Grid.Column="2"> <Image x:Name="Row2Col2" Source="Images/blank_image.png" Stretch="Fill"/></Button>
+        
+       
+      
 
-        <Grid.Background>
-            <ImageBrush ImageSource="Images/Grid.png"/>
-        </Grid.Background>
+        <!-- background image -->
+        <Image Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3" 
+               Source="Images/Grid.png" Stretch="Fill" />
 
-   
+
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="3" >
+            <Label Name="GamesPlayedLabel" Content="Games Played: 0 Games Won: 0" />
+            <Label Name="WinRatioLabel" Content="Win Ratio: 0%" />
+            <Label Name="TurnLabel" Content="Turn: Player X" />
+        </StackPanel>
 
 
 
