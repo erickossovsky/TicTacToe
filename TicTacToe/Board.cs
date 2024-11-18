@@ -52,7 +52,7 @@ namespace TicTacToe
 
         public Player CheckWin()
         {
-            // Checks to see if row win occured
+            // Checks to see if row win happenned
             for (int i = 0; i < 3; i++)
             {
                 if (board[i, 0] == board[i, 1] && board[i, 1] == board[i, 2])
@@ -60,14 +60,14 @@ namespace TicTacToe
                     return board[i, 0];
                 }
 
-                // Checks to see if column win occured
+                // Checks to see if column win happenned
                 if (board[0, i] == board[1, i] && board[1, i] == board[2, i])
                 {
                     return board[0, i];
                 }
             }
 
-            // Check to see if diagonal win occured
+            // Check to see if diagonal win happenned and if won diagonally
             if (board[0, 0] == board[1, 1] && board[1, 1] == board[2, 2])
             {
                 return board[0, 0];
@@ -78,7 +78,7 @@ namespace TicTacToe
                 return board[0, 2];
             }
 
-            return Player.None; // No win
+            return Player.None; // If theres no win, just restart the process
         }
 
        

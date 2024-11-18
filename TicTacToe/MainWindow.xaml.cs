@@ -24,6 +24,9 @@ namespace TicTacToe
         private Board board;
         private Board.Player currentPlayer;
         private bool gameOver;
+        int gamesTotal = 0;
+        int x = 0;
+        int o = 0;
 
 
         public MainWindow()
@@ -76,6 +79,18 @@ namespace TicTacToe
                 {
                     MessageBox.Show($"Player {winner} wins!");
                     gameOver = true;
+                    gamesTotal++;
+
+                    if (winner == Board.Player.X)
+                    {
+                        x++;
+                        
+                    }
+                    else
+                    {
+                        o++;
+                       
+                    }
                 }
 
                 if (currentPlayer == Board.Player.X)
@@ -86,12 +101,17 @@ namespace TicTacToe
                 {
                     currentPlayer = Board.Player.X;
                 }
-                UpdateTurnLabel();
+
+
+                UpdateNotification();
             }
         }
-        private void UpdateTurnLabel()
+        private void UpdateNotification()
         {
             TurnLabel.Content = $"Player {currentPlayer}'s turn";
+            GamesPlayedLabel.Content = $"Games Played: {gamesTotal}";
+            winRatio = (x / gamesTotal) * 100;
+            WinRatioLabel.Content = $"Win Ratio: {winRatio}%";
         }
     }
 }
