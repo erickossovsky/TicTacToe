@@ -17,7 +17,7 @@ namespace TicTacToe
    
     public partial class SymbolsWindow : Window
     {
-        public Board.Player Symbol { get; set; }
+        public Board.Player Symbol { get; private set; }
         public SymbolsWindow()
         {
             InitializeComponent();

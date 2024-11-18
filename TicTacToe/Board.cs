@@ -8,16 +8,18 @@ using System.Windows.Controls;
 namespace TicTacToe
 {
 
-public enum Player
+
+
+    public class Board
+    {
+        private Player[,] board;
+        
+        public enum Player
     {
         None,
         X,
         O
     }
-
-    public class Board
-    {
-        private Player[,] board;
 
         public Board()
         {
@@ -63,11 +65,10 @@ public enum Player
                 return board[0, 2];
             }
 
-            return Player.None;
+            return Player.None; // No win
         }
 
-     
-
+       
     }
 
 
